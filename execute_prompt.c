@@ -5,7 +5,7 @@ void execute_command(const char *command)   {
     if (child_pid == -1)    {
         perror("fork");
         exit(EXIT_FAILURE);
-        
+
     } else if (child_pid == 0)  {
         // child process
         execlp(command, command, (char *)NULL);
@@ -15,4 +15,5 @@ void execute_command(const char *command)   {
             // Parent process
             wait(NULL);
     }
+    return 0
 }
