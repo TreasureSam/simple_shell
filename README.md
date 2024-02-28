@@ -1,2 +1,2 @@
 # simple_shell
-A program that prints shell
+A program that writes shell
