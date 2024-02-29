@@ -120,15 +120,15 @@ void free_alias_list(alias_t *head);
 list_t *add_node_end(list_t **head, char *dir);
 void free_list(list_t *head);
 
-void help_all(void);
-void help_alias(void);
-void help_cd(void);
-void help_exit(void);
-void help_help(void);
-void help_env(void);
-void help_setenv(void);
-void help_unsetenv(void);
-void help_history(void);
+void support_all(void);
+void support_alias(void);
+void support_cd(void);
+void support_exit(void);
+void support_help(void);
+void support_env(void);
+void support_setenv(void);
+void support_unsetenv(void);
+void support_history(void);
 
 int proc_file_commands(char *file_path, int *exe_ret);
 #endif /* _SHELL_H_ */
